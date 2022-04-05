@@ -9,79 +9,94 @@
   <body>
     <header>
       <nav>
-        <a class="logo" href="#"> WebStudio </a>
+        <a class="logo" href="#"> <strong>Web</strong>Studio </a>
         <ul class="menu__list">
           <li class="menu__item"><a href="#" class="menu__link">Студия</a></li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Портфолио</a>
+            <a class="menu__link" href="#">Портфолио</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Контакты</a>
+            <a class="menu__link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
       <div class="contacts">
-        <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a class="phone" href="tel:+380961111111">+38 096 111 11 11</a>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <a class="mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a class="phone" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
       </div>
     </header>
 
     <main class="main">
-      <h1 class="main__title">Эффективные решения для вашего бизнеса</h1>
-      <button class="main__btn" type="button">Заказать услугу</button>
+      <section class="title">
+        <h1 class="title__main">Эффективные решения для вашего бизнеса</h1>
+        <button class="title__btn" type="button">Заказать услугу</button>
+      </section>
 
-      <div class="section__content">
-        <h3 class="section__title">Внимание к деталям</h3>
-        <p class="section__text">
-          Идейные соображения, а также начало повседневной работы по
-          формированию позиции.
-        </p>
-      </div>
-      <div class="section__content">
-        <h3 class="section__title">Пунктуальность</h3>
-        <p class="section__text">
-          Задача организации, в особенности же рамки и место обучения кадров
-          влечет за собой.
-        </p>
-      </div>
-      <div class="section__content">
-        <h3 class="section__title">Планирование</h3>
-        <p class="section__text">
-          Равным образом консультация с широким активом в значительной степени
-          обуславливает.
-        </p>
-      </div>
-      <div class="section__content">
-        <h3 class="section__title">Современные технологии</h3>
-        <p class="section__text">
-          Значимость этих проблем настолько очевидна, что реализация плановых
-          заданий.
-        </p>
-      </div>
+      <section class="content">
+        <dl class="content__list">
+          <dt class="content__title">Внимание к деталям</dt>
+          <dd class="content__text">
+            Идейные соображения, а также начало повседневной работы по
+            формированию позиции.
+          </dd>
+
+          <dt class="content__title">Пунктуальность</dt>
+          <dd class="content__text">
+            Задача организации, в особенности же рамки и место обучения кадров
+            влечет за собой.
+          </dd>
+          <dt class="content__title">Планирование</dt>
+          <dd class="content__text">
+            Равным образом консультация с широким активом в значительной степени
+            обуславливает.
+          </dd>
+          <dt class="content__title">Современные технологии</dt>
+          <dd class="content__text">
+            Значимость этих проблем настолько очевидна, что реализация плановых
+            заданий.
+          </dd>
+        </dl>
+      </section>
 
       <section class="about">
-        <h2 class="about__title">Чем мы занимаемся</h2>
-        <img
-          class="about__img"
-          src="images/image1.jpg"
-          alt="coding"
-          width="370"
-          height="294"
-        />
-        <img
-          class="about__img"
-          src="images/image2.jpg"
-          alt="working with laptop"
-          width="370"
-          height="294"
-        />
-        <img
-          class="about__img"
-          src="images/image3.jpg"
-          alt="working with tablet"
-          width="370"
-          height="294"
-        />
+        <dl class="about__list">
+          <dt class="about__title">Чем мы занимаемся</dt>
+          <dd class="about__item">
+            <img
+              class="about__img"
+              src="images/image1.jpg"
+              alt="coding"
+              width="370"
+              height="294"
+            />
+          </dd>
+          <dd class="about__item">
+            <img
+              class="about__img"
+              src="images/image2.jpg"
+              alt="working with laptop"
+              width="370"
+              height="294"
+            />
+          </dd>
+          <dd class="about__item">
+            <img
+              class="about__img"
+              src="images/image3.jpg"
+              alt="working with tablet"
+              width="370"
+              height="294"
+            />
+          </dd>
+        </dl>
       </section>
 
       <section class="team">
@@ -97,8 +112,8 @@
                 height="260"
               />
               <figcaption>
-                Игорь Демьяненко <br />
-                Product Designer
+                <p>Игорь Демьяненко</p>
+                <p>Designer</p>
               </figcaption>
             </figure>
           </li>
@@ -111,7 +126,10 @@
                 width="270"
                 height="260"
               />
-              <figcaption>Ольга Репина <br />Frontend Developer</figcaption>
+              <figcaption>
+                <p>Ольга Репина</p>
+                <p>Frontend Developer</p>
+              </figcaption>
             </figure>
           </li>
           <li class="team__item">
@@ -123,7 +141,10 @@
                 width="270"
                 height="260"
               />
-              <figcaption>Николай Тарасов<br />Marketing</figcaption>
+              <figcaption>
+                <p>Николай Тарасов</p>
+                <p>Marketing</p>
+              </figcaption>
             </figure>
           </li>
           <li class="team__item">
@@ -135,14 +156,18 @@
                 width="270"
                 height="260"
               />
-              <figcaption>Михаил Ермаков<br />UI Designer</figcaption>
+              <figcaption>
+                <p>Михаил Ермаков</p>
+                <p>UI Designer</p>
+              </figcaption>
             </figure>
           </li>
         </ul>
       </section>
     </main>
+
     <footer class="footer">
-      <a href="#" class="logo"> WebStudio </a>
+      <a class="logo" href="#"> <strong>Web</strong>Studio </a>
       <address class="address">
         <ul class="address__list">
           <li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
